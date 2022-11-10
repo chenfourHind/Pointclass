@@ -40,7 +40,5 @@ namespace p02.models {
             }
             return false;
         }
-
-
     }
 }
