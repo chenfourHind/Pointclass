@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace p02.models {
-    class Point3D {
+    class Point2D {
         private double x;
         private double y;
 
-        public Point3D() {
+        public Point2D() {
 
         }
 
-        public Point3D(double x, double y) {
+        public Point2D(double x, double y) {
             this.x = x;
             this.y = y;
         }
@@ -34,7 +34,7 @@ namespace p02.models {
             return y;
         }
 
-        public double GetDistance(Point3D p) {
+        public double GetDistance(Point2D p) {
             double d = 0, a;
 
             a = (p.x * p.x) + (p.y * p.y);
@@ -43,7 +43,7 @@ namespace p02.models {
             return d;
         }
 
-        public bool IsEqual(Point3D p){
+        public bool IsEqual(Point2D p){
             if (p.x == this.x && p.y == this.y) {
                 return true;
             }
@@ -55,7 +55,7 @@ namespace p02.models {
             y += yd;
         }
 
-        public bool IsLinear(Point3D p1, Point3D p2) {
+        public bool IsLinear(Point2D p1, Point2D p2) {
             double coef1, coef2;
 
             coef1 = (this.y - p1.y) / (this.x - p1.x);
