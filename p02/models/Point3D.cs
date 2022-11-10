@@ -49,5 +49,10 @@ namespace p02.models {
             }
             return false;
         }
+
+        public void Translate(double xd, double yd) {
+            x += xd;
+            y += yd;
+        }
     }
 }
