@@ -34,5 +34,13 @@ namespace p02.models {
             return y;
         }
 
+        public double getDistance(Point3D p) {
+            double d = 0, a;
+
+            a = (p.x * p.x) + (p.y * p.y);
+            d = Math.Sqrt(a);
+
+            return d;
+        }
     }
 }
