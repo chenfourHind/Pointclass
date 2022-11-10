@@ -34,5 +34,13 @@ namespace p02.models {
             return r;
         }
 
+        public bool IsEqual(Circle c) {
+            if (c.center == this.center && c.r == this.r) {
+                return true;
+            }
+            return false;
+        }
+
+
     }
 }
