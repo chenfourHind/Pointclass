@@ -54,5 +54,17 @@ namespace p02.models {
             x += xd;
             y += yd;
         }
+
+        public bool IsLinear(Point3D p1, Point3D p2) {
+            double coef1, coef2;
+
+            coef1 = (this.y - p1.y) / (this.x - p1.x);
+            coef2 = (p2.y - p1.y) / (p2.x - p1.x);
+
+            if (coef1 == coef2) {
+                return true;
+            }
+            return false;
+        }
     }
 }
