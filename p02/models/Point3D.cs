@@ -34,13 +34,20 @@ namespace p02.models {
             return y;
         }
 
-        public double getDistance(Point3D p) {
+        public double GetDistance(Point3D p) {
             double d = 0, a;
 
             a = (p.x * p.x) + (p.y * p.y);
             d = Math.Sqrt(a);
 
             return d;
+        }
+
+        public bool IsEqual(Point3D p){
+            if (p.x == this.x && p.y == this.y) {
+                return true;
+            }
+            return false;
         }
     }
 }
